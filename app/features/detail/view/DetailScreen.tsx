@@ -45,7 +45,11 @@ const DetailScreen = ({ route, navigation: { navigate } }: props) => {
                 position: 'absolute',
                 right: 0,
                 left: 0,
+                bottom: 0,
             }}>
+                <View style={{
+                    height: 40,
+                }}/>
                 <SafeAreaView style={{
                     flexDirection: 'column'
                 }}>
@@ -176,6 +180,7 @@ const DetailScreen = ({ route, navigation: { navigate } }: props) => {
                                                     style={{
                                                         marginLeft: 20,
                                                         marginVertical: 10,
+                                                        marginBottom: 20,
                                                     }}
                                                     onPress={() => navigate("DetailScreen", {
                                                         data: e,

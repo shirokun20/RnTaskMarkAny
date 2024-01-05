@@ -15,7 +15,7 @@ type props = {
 }
 
 const DetailScreen = ({ route, navigation: { navigate } }: props) => {
-    
+
     const {
         name,
         price,
@@ -29,6 +29,7 @@ const DetailScreen = ({ route, navigation: { navigate } }: props) => {
         <View style={{
             height: '100%',
             width: '100%',
+            backgroundColor: 'white'
         }}>
             <ImageBackground
                 source={CARD_BG_IMAGE}
